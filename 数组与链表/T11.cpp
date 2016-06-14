@@ -3,33 +3,36 @@ using namespace std;
 int main()
 {
     int n;
-    cin >> n;
-    int tmp = n;
-    int arr[tmp];
-    while (tmp)
+    while (cin >> n)
     {
-        cin >> arr[--tmp];
-    }
+        int tmp = n;
+        int arr[tmp];
+        while (tmp)
+        {
+            cin >> arr[--tmp];
+        }
 
-    int i;
-    for (i = 0; i < n; i++)
-    {
-        if (arr[i] < 0)
-            cout << arr[i] << " ";
-    }
+        int i;
+        for (i = 0; i < n; i++)
+        {
+            if (arr[i] < 0)
+                cout << arr[i] << " ";
+        }
 
-    for (i = 0; i < n; i++)
-    {
-        if (arr[i] == 0)
-            cout << arr[i] << " ";
-    }
+        for (i = 0; i < n; i++)
+        {
+            if (arr[i] == 0)
+                cout << arr[i] << " ";
+        }
 
-    for (i = 0; i < n; i++)
-    {
-        if (arr[i] > 0)
-            cout << arr[i] << " ";
+        for (i = 0; i < n; i++)
+        {
+            if (arr[i] > 0)
+                cout << arr[i] << " ";
+        }
+        cout << endl;
+
     }
-    cout << endl;
     return 0;
 }
 
